@@ -5,5 +5,13 @@
   "image": "heroku/go:1.6",
   "mount_dir": "src/github.com/otiai10/heroku-simple-app",
   "website": "http://github.com/otiai10/heroku-simple-app",
-  "repository": "http://github.com/otiai10/heroku-simple-app"
+  "repository": "http://github.com/otiai10/heroku-simple-app",
+  "buildpacks": [
+      {
+          "url": "https://github.com/otiai10/heroku-buildpack-tesseract-devel"
+      },
+      {
+          "url": "heroku/go"
+      }
+  ]
 }
