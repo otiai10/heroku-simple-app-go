@@ -1,0 +1,9 @@
+{
+  "name": "Simple Heroku App by Golang",
+  "description": "Simple Heroku App by Golang",
+  "keywords": [],
+  "image": "heroku/go:1.6",
+  "mount_dir": "src/github.com/otiai10/heroku-simple-app",
+  "website": "http://github.com/otiai10/heroku-simple-app",
+  "repository": "http://github.com/otiai10/heroku-simple-app"
+}
