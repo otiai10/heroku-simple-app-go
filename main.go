@@ -16,6 +16,7 @@ func main() {
 		m.RenderJSON(w, http.StatusOK, m.P{
 			"message": "Hello!",
 			"FOO":     os.Getenv("FOO"),
+			"BAR":     os.Getenv("BAR"),
 		})
 	})
 
