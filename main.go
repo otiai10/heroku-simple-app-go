@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 	"os"
 
@@ -14,7 +13,10 @@ func main() {
 
 	router := m.NewRouter()
 	router.GET("/", func(w http.ResponseWriter, req *http.Request) {
-		fmt.Fprintf(w, "Hello!")
+		m.RenderJSON(w, http.StatusOK, m.P{
+			"message": "Hello!",
+			"FOO":     os.Getenv("FOO"),
+		})
 	})
 
 	http.ListenAndServe(":"+port, router)
