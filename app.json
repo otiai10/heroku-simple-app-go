@@ -8,6 +8,9 @@
   "repository": "http://github.com/otiai10/heroku-simple-app",
   "buildpacks": [
       {
+          "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+      },
+      {
           "url": "https://github.com/otiai10/heroku-buildpack-tesseract-devel.git"
       },
       {
