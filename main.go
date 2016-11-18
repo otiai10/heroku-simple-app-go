@@ -18,6 +18,7 @@ func main() {
 			"INCLUDE_PATH":    os.Getenv("INCLUDE_PATH"),
 			"LIBRARY_PATH":    os.Getenv("LIBRARY_PATH"),
 			"LD_LIBRARY_PATH": os.Getenv("LD_LIBRARY_PATH"),
+			"HOME":            os.Getenv("HOME"),
 		})
 	})
 
