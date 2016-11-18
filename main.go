@@ -14,9 +14,8 @@ func main() {
 	router := m.NewRouter()
 	router.GET("/", func(w http.ResponseWriter, req *http.Request) {
 		m.RenderJSON(w, http.StatusOK, m.P{
-			"message": "Hello!",
-			"FOO":     os.Getenv("FOO"),
-			"BAR":     os.Getenv("BAR"),
+			"TESSDATA_PREFIX": os.Getenv("TESSDATA_PREFIX"),
+			"LD_INCLUDE_PATH": os.Getenv("LD_INCLUDE_PATH"),
 		})
 	})
 
