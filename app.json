@@ -14,6 +14,9 @@
           "url": "https://github.com/otiai10/heroku-buildpack-tesseract-devel.git"
       },
       {
+          "url": "https://github.com/matteotiziano/heroku-buildpack-tesseract"
+      },
+      {
           "url": "heroku/go"
       }
   ]
