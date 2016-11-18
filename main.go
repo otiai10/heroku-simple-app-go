@@ -5,6 +5,8 @@ import (
 	"os"
 
 	m "github.com/otiai10/marmoset"
+
+	_ "github.com/otiai10/gosseract"
 )
 
 func main() {
